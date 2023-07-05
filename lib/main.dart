@@ -14,17 +14,19 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.orange,
       // Scaffold 위젯
-      body: SizedBox(
-          width: double.infinity,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            // 여러 위젯을 컬럼 위젯에 입력 가능
-            children: [
-              Text('Code'),
-              Text('Factory2'),
-            ],
-          )),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(
+            'asset/img/logo.png',
+          ),
+          CircularProgressIndicator(
+            color: Colors.white,
+          ),
+        ],
+      ),
     );
   }
 }
